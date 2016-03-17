@@ -1,4 +1,4 @@
-FROM mhart/alpine-node
+FROM hypriot/rpi-node
 
 RUN mkdir /app
 WORKDIR /app

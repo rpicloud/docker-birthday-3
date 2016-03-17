@@ -1,4 +1,4 @@
-FROM java:openjdk-8-jdk-alpine
+FROM hypriot/rpi-java
 
 #RUN apt-get update -qq && apt-get install -y maven && apt-get clean
 
