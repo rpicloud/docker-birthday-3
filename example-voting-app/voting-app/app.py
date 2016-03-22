@@ -8,12 +8,12 @@ import socket
 import random
 import json
 
-option_a = os.getenv('OPTION_A', "One")
-option_b = os.getenv('OPTION_B', "Two")
+option_a = os.getenv('OPTION_A', "Python")
+option_b = os.getenv('OPTION_B', "Javascript")
 
 hostname = socket.gethostname()
 
-redis = connect_to_redis("192.168.1.81")
+redis = connect_to_redis("redis")
 app = Flask(__name__)
 
 

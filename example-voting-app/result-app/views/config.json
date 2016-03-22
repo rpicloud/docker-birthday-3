@@ -1,7 +1,7 @@
 {
-  "name":"Gordon",
-  "twitter":"@docker",
-  "location":"San Francisco, CA, USA",
-  "repo":["example/examplevotingapp_voting-app","example/examplevotingapp_result-app"],
-  "vote":"Cat"
+  "name":"Kasper Nissen",
+  "twitter":"@phennex",
+  "location":"Aarhus, Denmark",
+  "repo":["kaspernissen/dockerbday_voting-app","kaspernissen/dockerbday_result-app"],
+  "vote":"Javascript"
 }

@@ -1,8 +1,19 @@
-# Instructions copied from - https://hub.docker.com/_/python/
-FROM python:3-onbuild
+# Using official python runtime base image
+FROM hypriot/rpi-python
 
-# tell the port number the container should expose
-EXPOSE 5000
+# Set the application directory
+WORKDIR /app
 
-# run the command
-CMD ["python", "/usr/src/app/app.py"]
+# Install our requirements.txt
+ADD requirements.txt /app/requirements.txt
+RUN pip install -r requirements.txt
+
+# Copy our code from the current folder to /app inside the container
+ADD . /app
+
+# Make port 5000 available for links and/or publish
+EXPOSE 80
+
+# Define our command to be run when launching the container
+CMD ["python", "app.py"]
+

@@ -27,7 +27,7 @@ var query = require('./views/config.json');
 async.retry(
   {times: 1000, interval: 1000},
   function(callback) {
-    pg.connect('postgres://postgres:postgres@192.168.1.82:5432/postgres', function(err, client, done) {
+    pg.connect('postgres://postgres:postgres@db/postgres', function(err, client, done) {
       if (err) {
         console.error("Failed to connect to db" +err);
       }
